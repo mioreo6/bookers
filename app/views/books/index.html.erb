@@ -1,2 +1,18 @@
 <h1>Books</h1>
 
+<% @books.each do |book| %> 
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.body %></td>
+  </tr>
+  
+</table>
+
+<% end %>
