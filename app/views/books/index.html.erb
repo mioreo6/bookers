@@ -1,17 +1,22 @@
-<h1>Books</h1>
-
-<% @books.each do |book| %> 
-
+<h1>Books</h1> 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-  </tr>
-
-  <tr>
-    <td><%= book.title %></td>
-    <td><%= book.body %></td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+   <% @books.each do |book| %>  
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.body %></td>
+      
+    </tr>
+    <% end %>
+  </tbody>
   
 </table>
 
